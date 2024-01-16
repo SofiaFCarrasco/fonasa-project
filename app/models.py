@@ -21,6 +21,8 @@ class Patient(models.Model) :
     diet = models.BooleanField(null=True)
     smoker = models.IntegerField (null=True)
     height_weight = models.FloatField(null=True)
+    priority = models.FloatField(null=True)
+    risk = models.FloatField(null=True)
     patient_type = models.ForeignKey(Patient_Type, on_delete=models.CASCADE)
 
 class Specialist(models.Model):
