@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'app',
 ]
 
@@ -52,7 +53,11 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-
+    'localhost:8000',
+    '127.0.0.1:8000',
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+    '*'
 ]
 
 ROOT_URLCONF = 'myproject.urls'
